@@ -2,7 +2,7 @@ pipeline {
   agent any
   options { overrideIndexTriggers(env.CHANGE_ID == null) }
   stages {
-     stage('Hello') {
+     stage('Hello!') {
         steps {echo "i have override"}
      }
   }
