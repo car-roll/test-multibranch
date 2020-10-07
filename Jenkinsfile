@@ -3,7 +3,7 @@ pipeline {
   options { overrideIndexTriggers(env.CHANGE_ID == null) }
   stages {
      stage('Hello') {
-        steps {echo "i am overriding only indexing, you see?"}
+        steps {echo "i am overriding only indexing, okay?"}
      }
   }
 }
