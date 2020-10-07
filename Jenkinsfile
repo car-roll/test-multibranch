@@ -1,8 +1,9 @@
 pipeline {
   agent any
+  options { overrideIndexTriggers(env.CHANGE_ID == null) }
   stages {
      stage('Hello') {
-        steps {echo "i am master branch"}
+        steps {echo "i am overriding only indexing, here we go!"}
      }
   }
 }
